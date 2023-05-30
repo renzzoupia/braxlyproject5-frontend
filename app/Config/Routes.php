@@ -36,7 +36,7 @@ $routes -> resource('productos');
 $routes -> resource('empresa');
 $routes -> resource('usuarios');
 $routes -> resource('sucursal');
-$routes -> resource('plato');
+$routes -> resource('platos');
 $routes -> resource('reclamos');
 $routes -> resource('pedidos');
 $routes -> resource('detalle_pedido');

@@ -621,3 +621,268 @@ WHERE `estado` = :estado:', [...], false)
  9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inventario))
 10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 03:44:44 --> Call to undefined method App\Models\SucursalModel::getInventario
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Sucursal.php(20): CodeIgniter\Model->__call('getInventario', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 03:45:13 --> Call to undefined method App\Models\SucursalModel::getInventario
+in SYSTEMPATH\Model.php on line 842.
+ 1 APPPATH\Controllers\Sucursal.php(20): CodeIgniter\Model->__call('getInventario', [])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:00:00 --> Undefined index: empr_id
+in APPPATH\Controllers\Sucursal.php on line 138.
+ 1 APPPATH\Controllers\Sucursal.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: empr_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Sucursal.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:01:46 --> Undefined index: empr_id
+in APPPATH\Controllers\Sucursal.php on line 138.
+ 1 APPPATH\Controllers\Sucursal.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: empr_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Sucursal.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:03:17 --> Undefined index: empr_id
+in APPPATH\Controllers\Sucursal.php on line 138.
+ 1 APPPATH\Controllers\Sucursal.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: empr_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Sucursal.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 04:03:46 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`empr_id`) REFERENCES `empresa` (`empr_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `su...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `su...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `su...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Sucursal.php(140): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+#10 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 04:03:46 --> Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`sucursal`, CONSTRAINT `sucursal_ibfk_1` FOREIGN KEY (`empr_id`) REFERENCES `empresa` (`empr_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `sucursal` (`sucu_direccion`, `sucu_telefono`, `sucu_departamento`, `sucu_provincia`) VALUES (\'Jr. las flores \', \'987654321\', \'San Martin\', \'San Martin\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sucursal` (`sucu_direccion`, `sucu_telefono`, `sucu_departamento`, `sucu_provincia`) VALUES (\'Jr. las flores \', \'987654321\', \'San Martin\', \'San Martin\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sucursal` (`sucu_direccion`, `sucu_telefono`, `sucu_departamento`, `sucu_provincia`) VALUES (\'Jr. las flores \', \'987654321\', \'San Martin\', \'San Martin\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sucursal` (`sucu_direccion`, `sucu_telefono`, `sucu_departamento`, `sucu_provincia`) VALUES (:sucu_direccion:, :sucu_telefono:, :sucu_departamento:, :sucu_provincia:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Sucursal.php(140): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:03:54 --> Undefined index: empr_id
+in APPPATH\Controllers\Sucursal.php on line 138.
+ 1 APPPATH\Controllers\Sucursal.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: empr_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Sucursal.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:04:02 --> Undefined index: empr_id
+in APPPATH\Controllers\Sucursal.php on line 138.
+ 1 APPPATH\Controllers\Sucursal.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: empr_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Sucursal.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:04:55 --> Undefined index: empr_id
+in APPPATH\Controllers\Sucursal.php on line 138.
+ 1 APPPATH\Controllers\Sucursal.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: empr_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Sucursal.php', 138, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->create()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:11:23 --> in_array() expects parameter 2 to be array, null given
+in SYSTEMPATH\Validation\Validation.php on line 214.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, null given', 'C:\\xampp\\htdocs\\braxlyproject5-php\\system\\Validation\\Validation.php', 214, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(214): in_array('if_exist', null, true)
+ 3 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('sucu_nombre', 'sucu_nombre', 'KFC', null, [...])
+ 4 APPPATH\Controllers\Sucursal.php(191): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->update('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:11:42 --> in_array() expects parameter 2 to be array, null given
+in SYSTEMPATH\Validation\Validation.php on line 214.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, null given', 'C:\\xampp\\htdocs\\braxlyproject5-php\\system\\Validation\\Validation.php', 214, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(214): in_array('if_exist', null, true)
+ 3 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('sucu_nombre', 'sucu_nombre', 'KFC', null, [...])
+ 4 APPPATH\Controllers\Sucursal.php(191): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->update('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:12:30 --> in_array() expects parameter 2 to be array, null given
+in SYSTEMPATH\Validation\Validation.php on line 214.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, null given', 'C:\\xampp\\htdocs\\braxlyproject5-php\\system\\Validation\\Validation.php', 214, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(214): in_array('if_exist', null, true)
+ 3 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('sucu_nombre', 'sucu_nombre', 'KFC', null, [...])
+ 4 APPPATH\Controllers\Sucursal.php(191): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->update('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 04:13:34 --> in_array() expects parameter 2 to be array, null given
+in SYSTEMPATH\Validation\Validation.php on line 214.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'in_array() expects parameter 2 to be array, null given', 'C:\\xampp\\htdocs\\braxlyproject5-php\\system\\Validation\\Validation.php', 214, [...])
+ 2 SYSTEMPATH\Validation\Validation.php(214): in_array('if_exist', null, true)
+ 3 SYSTEMPATH\Validation\Validation.php(170): CodeIgniter\Validation\Validation->processRules('sucu_nombre', 'sucu_nombre', 'KFC', null, [...])
+ 4 APPPATH\Controllers\Sucursal.php(191): CodeIgniter\Validation\Validation->run()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->update('3')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 04:16:39 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Sucursal.php(254): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Sucursal->delete('3')
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 04:16:39 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `estado` = :estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Sucursal.php(254): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->delete('3')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 04:17:24 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Sucursal.php(254): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Sucursal->delete('3')
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 04:17:24 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `estado` = :estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Sucursal.php(254): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Sucursal->delete('3')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sucursal))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 04:41:52 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Platos.php(249): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Platos->delete('8')
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Platos))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 04:41:52 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `estado` = :estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Platos.php(249): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Platos->delete('8')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Platos))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 04:42:25 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Platos.php(249): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Platos->delete('8')
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Platos))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 04:42:25 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `estado` = :estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Platos.php(249): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Platos->delete('8')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Platos))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
