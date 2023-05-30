@@ -7,7 +7,7 @@ class DetallePedidoModel extends Model{
     protected $returnType = 'array';
     protected $allowedFields = [
         'ped_id',
-        'depe_estado',
+        'depe_estado_comida',
         'depe_fecha',
         'tipa_id',
         'depe_num_mesa',

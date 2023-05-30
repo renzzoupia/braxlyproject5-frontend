@@ -30,21 +30,21 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes -> resource('proveedores');//importante poner la cantidad de tablas
-$routes -> resource('inventario');
-$routes -> resource('productos');
+$routes -> resource('proveedores');//importante poner la cantidad de tablas //check
+$routes -> resource('inventario');//check
+$routes -> resource('productos');//check
 $routes -> resource('empresa');
-$routes -> resource('usuarios');
-$routes -> resource('sucursal');
-$routes -> resource('platos');
-$routes -> resource('reclamos');
+$routes -> resource('usuarios');//check
+$routes -> resource('sucursal');//check
+$routes -> resource('platos');//check
+$routes -> resource('reclamos');//check
 $routes -> resource('pedidos');
-$routes -> resource('detalle_pedido');
-$routes -> resource('clientes');
-$routes -> resource('personas');
-$routes -> resource('trabajadores');
-$routes -> resource('boletas');
-$routes -> resource('registros');
+$routes -> resource('detallepedido');//check
+$routes -> resource('clientes');//check
+$routes -> resource('personas');//check
+$routes -> resource('trabajadores');//check
+$routes -> resource('boletas');//check
+$routes -> resource('registros');//check
 
 
 /*
