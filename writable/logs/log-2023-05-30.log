@@ -1103,3 +1103,288 @@ WHERE `bol_estado` = :bol_estado:', [...], false)
  9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
 10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:34:06 --> mysqli_sql_exception: Unknown column 'tra.tra.estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Trabajadores.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Trabajadores->index()
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 06:34:06 --> Unknown column 'tra.tra.estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = :tra.tra.estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Trabajadores.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Trabajadores->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:34:50 --> mysqli_sql_exception: Unknown column 'tra.tra.estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Trabajadores.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Trabajadores->index()
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 06:34:50 --> Unknown column 'tra.tra.estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `tra`.`tra`.`estado` = :tra.tra.estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Trabajadores.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Trabajadores->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 06:35:08 --> Undefined index: reg_cliente_id
+in APPPATH\Controllers\Trabajadores.php on line 16.
+ 1 APPPATH\Controllers\Trabajadores.php(16): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: reg_cliente_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Trabajadores.php', 16, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Trabajadores->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:36:07 --> mysqli_sql_exception: Unknown column 'tra.estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Trabajadores.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Trabajadores->show('1')
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 06:36:07 --> Unknown column 'tra.estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `tra`.`estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `tra`.`estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `tra`.`estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `tra`.`estado` = :tra.estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Trabajadores.php(55): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Trabajadores->show('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 10:28:43 --> Undefined index: reg_cliente_id
+in APPPATH\Controllers\Trabajadores.php on line 168.
+ 1 APPPATH\Controllers\Trabajadores.php(168): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: reg_cliente_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Trabajadores.php', 168, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Trabajadores->update('02')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 10:29:12 --> Undefined index: cliente_id
+in APPPATH\Controllers\Trabajadores.php on line 246.
+ 1 APPPATH\Controllers\Trabajadores.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: cliente_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Trabajadores.php', 246, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Trabajadores->delete('02')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-30 10:29:50 --> Undefined index: reg_cliente_id
+in APPPATH\Controllers\Trabajadores.php on line 246.
+ 1 APPPATH\Controllers\Trabajadores.php(246): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: reg_cliente_id', 'C:\\xampp\\htdocs\\braxlyproject5-php\\app\\Controllers\\Trabajadores.php', 246, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Trabajadores->delete('02')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Trabajadores))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 10:34:10 --> mysqli_sql_exception: Unknown column 'reg.estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Clientes.php(12): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Clientes->index()
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 10:34:10 --> Unknown column 'reg.estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `reg`.`estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `reg`.`estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `reg`.`estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `reg`.`estado` = :reg.estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Clientes.php(12): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 10:36:12 --> mysqli_sql_exception: Unknown column 'c.tra_id' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\app\Models\ClientesModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Clientes.php(62): App\Models\ClientesModel->getId('01')
+#6 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Clientes->show('01')
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 10:36:12 --> Unknown column 'c.tra_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = \'01\'
+AND `c`.`cli_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = \'01\'
+AND `c`.`cli_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = \'01\'
+AND `c`.`cli_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = :c.tra_id:
+AND `c`.`cli_estado` = :c.cli_estado:', [...], false)
+ 5 APPPATH\Models\ClientesModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Clientes.php(62): App\Models\ClientesModel->getId('01')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->show('01')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 10:37:01 --> mysqli_sql_exception: Unknown column 'c.tra_id' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\app\Models\ClientesModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Clientes.php(62): App\Models\ClientesModel->getId('01')
+#6 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Clientes->show('01')
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 10:37:01 --> Unknown column 'c.tra_id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = \'01\'
+AND `c`.`cli_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = \'01\'
+AND `c`.`cli_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = \'01\'
+AND `c`.`cli_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `clientes` `c`
+JOIN `personas` `p` ON `c`.`per_id` = `p`.`per_id`
+WHERE `c`.`tra_id` = :c.tra_id:
+AND `c`.`cli_estado` = :c.cli_estado:', [...], false)
+ 5 APPPATH\Models\ClientesModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Clientes.php(62): App\Models\ClientesModel->getId('01')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Clientes->show('01')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clientes))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 11:06:32 --> mysqli_sql_exception: Unknown column 'estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Personas.php(55): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Personas->show('1')
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 11:06:32 --> Unknown column 'estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `estado` = :estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Personas.php(55): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Personas->show('1')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Personas))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
