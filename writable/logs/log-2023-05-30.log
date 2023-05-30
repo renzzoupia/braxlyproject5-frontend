@@ -886,3 +886,220 @@ WHERE `estado` = :estado:', [...], false)
  9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Platos))
 10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 05:05:17 --> mysqli_sql_exception: Unknown column 'tp.prod_id' in 'on clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\app\Models\ProductosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Productos.php(20): App\Models\ProductosModel->getProductos()
+#6 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Productos->index()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-30 05:05:17 --> Unknown column 'tp.prod_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `productos` `pr`
+JOIN `tipo_producto` `tp` ON `pr`.`prod_id` = `tp`.`prod_id`
+WHERE `pr`.`prod_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `productos` `pr`
+JOIN `tipo_producto` `tp` ON `pr`.`prod_id` = `tp`.`prod_id`
+WHERE `pr`.`prod_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `productos` `pr`
+JOIN `tipo_producto` `tp` ON `pr`.`prod_id` = `tp`.`prod_id`
+WHERE `pr`.`prod_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `productos` `pr`
+JOIN `tipo_producto` `tp` ON `pr`.`prod_id` = `tp`.`prod_id`
+WHERE `pr`.`prod_estado` = :pr.prod_estado:', [...], false)
+ 5 APPPATH\Models\ProductosModel.php(21): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Productos.php(20): App\Models\ProductosModel->getProductos()
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Productos->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Productos))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:11:14 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Boletas.php(138): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Boletas->create()
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+#10 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 06:11:14 --> Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (:tra_id:, :bol_fech_emision:, :bol_monto_total:, :deco_info_compra:, :depe_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Boletas.php(138): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Boletas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:12:32 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Boletas.php(138): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Boletas->create()
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+#10 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 06:12:32 --> Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (:tra_id:, :bol_fech_emision:, :bol_monto_total:, :deco_info_compra:, :depe_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Boletas.php(138): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Boletas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:12:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Boletas.php(138): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Boletas->create()
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+#10 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 06:12:58 --> Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (:tra_id:, :bol_fech_emision:, :bol_monto_total:, :deco_info_compra:, :depe_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Boletas.php(138): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Boletas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:13:56 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE) in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Boletas.php(138): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Boletas->create()
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+#10 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 06:13:56 --> Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`) ON UPDATE CASCADE)
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (:tra_id:, :bol_fech_emision:, :bol_monto_total:, :deco_info_compra:, :depe_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Boletas.php(138): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Boletas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:19:33 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`)) in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `bo...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bo...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bo...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bo...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Boletas.php(138): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Boletas->create()
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+#10 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-30 06:19:33 --> Cannot add or update a child row: a foreign key constraint fails (`braxly_db`.`boletas`, CONSTRAINT `boletas_ibfk_2` FOREIGN KEY (`depe_id`) REFERENCES `detalle_pedido` (`depe_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (\'1\', \'2023-05-29\', \'120.00\', \'Nada\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `boletas` (`tra_id`, `bol_fech_emision`, `bol_monto_total`, `deco_info_compra`, `depe_id`) VALUES (:tra_id:, :bol_fech_emision:, :bol_monto_total:, :deco_info_compra:, :depe_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Boletas.php(138): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Boletas->create()
+10 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+11 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-30 06:24:07 --> mysqli_sql_exception: Unknown column 'bol_estado' in 'where clause' in C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\xampp\htdocs\braxlyproject5-php\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\braxlyproject5-php\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\braxlyproject5-php\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\braxlyproject5-php\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\braxlyproject5-php\app\Controllers\Boletas.php(249): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(934): App\Controllers\Boletas->delete('7')
+#8 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+#9 C:\xampp\htdocs\braxlyproject5-php\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\braxlyproject5-php\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-30 06:24:07 --> Unknown column 'bol_estado' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `registros`
+WHERE `bol_estado` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `registros`
+WHERE `bol_estado` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `registros`
+WHERE `bol_estado` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `registros`
+WHERE `bol_estado` = :bol_estado:', [...], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Boletas.php(249): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Boletas->delete('7')
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Boletas))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
