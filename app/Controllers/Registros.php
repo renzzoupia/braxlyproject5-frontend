@@ -4,6 +4,10 @@ use CodeIgniter\Controller;
 use App\Models\RegistrosModel;
 class Registros extends Controller{
 
+    public function vista()
+    {
+        return view('registros_template/registros_html');
+    }
     public function index(){
         $model = new RegistrosModel();
         $registro = $model -> where('reg_estado', 1) -> findAll();

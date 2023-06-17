@@ -1,0 +1,63 @@
+CRITICAL - 2023-06-11 00:37:31 --> Invalid file: "registros_template/registros_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros_template/registros_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registros_template/registros_html', [], true)
+ 3 APPPATH\Controllers\Registros.php(9): view('registros_template/registros_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registros->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registros))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 00:37:32 --> Invalid file: "registros_template/registros_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros_template/registros_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registros_template/registros_html', [], true)
+ 3 APPPATH\Controllers\Registros.php(9): view('registros_template/registros_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registros->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registros))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 00:37:33 --> Invalid file: "registros_template/registros_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros_template/registros_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registros_template/registros_html', [], true)
+ 3 APPPATH\Controllers\Registros.php(9): view('registros_template/registros_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registros->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registros))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 00:37:33 --> Invalid file: "registros_template/registros_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros_template/registros_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registros_template/registros_html', [], true)
+ 3 APPPATH\Controllers\Registros.php(9): view('registros_template/registros_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registros->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registros))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 00:37:33 --> Invalid file: "registros_template/registros_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros_template/registros_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registros_template/registros_html', [], true)
+ 3 APPPATH\Controllers\Registros.php(9): view('registros_template/registros_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registros->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registros))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 00:37:33 --> Invalid file: "registros_template/registros_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros_template/registros_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registros_template/registros_html', [], true)
+ 3 APPPATH\Controllers\Registros.php(9): view('registros_template/registros_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registros->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registros))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-11 00:37:33 --> Invalid file: "registros_template/registros_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registros_template/registros_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registros_template/registros_html', [], true)
+ 3 APPPATH\Controllers\Registros.php(9): view('registros_template/registros_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Registros->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Registros))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

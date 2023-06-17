@@ -1,0 +1,108 @@
+CRITICAL - 2023-06-13 16:11:34 --> Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:16:03 --> Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:16:04 --> Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:16:32 --> syntax error, unexpected '$routes' (T_VARIABLE)
+in APPPATH\Config\Routes.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:16:33 --> syntax error, unexpected '$routes' (T_VARIABLE)
+in APPPATH\Config\Routes.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:20:07 --> syntax error, unexpected '$routes' (T_VARIABLE)
+in APPPATH\Config\Routes.php on line 37.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:20:20 --> Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:20:20 --> Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:29:07 --> Invalid file: "admin/admin.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:29:38 --> Invalid file: "admin/admin_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin_html', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:29:38 --> Invalid file: "admin/admin_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin_html', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:31:24 --> Invalid file: "admin/admin_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin_html', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 16:31:25 --> Invalid file: "admin/admin_html.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/admin_html.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/admin_html', [], true)
+ 3 APPPATH\Controllers\Admin.php(9): view('admin/admin_html')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin->vista()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
